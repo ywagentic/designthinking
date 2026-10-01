@@ -102,15 +102,16 @@
   .tanote span { font-weight:700; font-size:11px; letter-spacing:.08em; margin-right:8px;
                   text-transform:uppercase; color:var(--accent); }
 
+  .cl-short { display:none; }
   @media (max-width:560px) {
+    .cl-long { display:none; }
+    .cl-short { display:inline; }
+    .notice { font-size:15px; line-height:1.5; padding:12px 14px; margin-top:14px; }
+    .intro { display:none; }
     h1 { font-size:30px; }
     header { padding:20px 0 12px; }
     .deck { font-size:16px; margin:0 0 8px; }
-    .notice { font-family:Georgia, 'Iowan Old Style', 'Times New Roman', serif; font-size:16px; line-height:1.6; color:var(--body);
-             background:var(--tint); border-left:3px solid var(--accent);
-             padding:14px 18px; margin:18px 0 0; }
-  .intro p { font-size:15px; line-height:1.55; margin:12px 0 0; }
-    .toggle { display:none; }
+    .toggle { padding:11px 10px; font-size:12px; }
     .qt { font-size:16px; }
   }
   @media print {
@@ -138,13 +139,13 @@
           <circle cx="7" cy="7" r="5" fill="none" stroke="#5A5651" stroke-width="1.6"/>
           <line x1="10.8" y1="10.8" x2="15" y2="15" stroke="#5A5651" stroke-width="1.6"/>
         </svg>
-        <input id="q" type="text" placeholder="Search 65 questions — try “print”, “late”, “Miro”"
+        <input id="q" type="text" placeholder="Search 65 questions"
                aria-label="Search the FAQ" autocomplete="off">
         <button class="clear" id="clear" aria-label="Clear search">×</button>
       </label>
       <button class="toggle" id="toggle">Unfold all</button>
     </div>
-    <nav class="chips" aria-label="Jump to a section"><button class="chip on" data-sec="*" aria-pressed="true">All<span class="n">65</span></button><button class="chip" data-sec="methods-1-the-hybrid-monster" aria-pressed="false">Methods 1 — The Hybrid Monster<span class="n">6</span></button><button class="chip" data-sec="project-1-waste" aria-pressed="false">Project 1 — Waste<span class="n">15</span></button><button class="chip" data-sec="project-1-the-eidetic-image" aria-pressed="false">Project 1 — The Eidetic Image<span class="n">14</span></button><button class="chip" data-sec="methods-2-tracking-and-visualizing-a-journey" aria-pressed="false">Methods 2 — Tracking and Visualizing a Journey<span class="n">6</span></button><button class="chip" data-sec="project-2-journey-map" aria-pressed="false">Project 2 — Journey Map<span class="n">15</span></button><button class="chip" data-sec="software" aria-pressed="false">Software<span class="n">2</span></button><button class="chip" data-sec="printing" aria-pressed="false">Printing<span class="n">2</span></button><button class="chip" data-sec="deadlines-and-grades" aria-pressed="false">Deadlines and grades<span class="n">5</span></button></nav>
+    <nav class="chips" aria-label="Jump to a section"><button class="chip on" data-sec="*" aria-pressed="true">All<span class="n">65</span></button><button class="chip" data-sec="methods-1-the-hybrid-monster" aria-pressed="false"><span class="cl-long">Methods 1 — The Hybrid Monster</span><span class="cl-short">Methods 1</span><span class="n">6</span></button><button class="chip" data-sec="project-1-waste" aria-pressed="false"><span class="cl-long">Project 1 — Waste</span><span class="cl-short">Project 1 · Waste</span><span class="n">15</span></button><button class="chip" data-sec="project-1-the-eidetic-image" aria-pressed="false"><span class="cl-long">Project 1 — The Eidetic Image</span><span class="cl-short">Project 1 · Eidetic</span><span class="n">14</span></button><button class="chip" data-sec="methods-2-tracking-and-visualizing-a-journey" aria-pressed="false"><span class="cl-long">Methods 2 — Tracking and Visualizing a Journey</span><span class="cl-short">Methods 2</span><span class="n">6</span></button><button class="chip" data-sec="project-2-journey-map" aria-pressed="false"><span class="cl-long">Project 2 — Journey Map</span><span class="cl-short">Project 2</span><span class="n">15</span></button><button class="chip" data-sec="software" aria-pressed="false"><span class="cl-long">Software</span><span class="cl-short">Software</span><span class="n">2</span></button><button class="chip" data-sec="printing" aria-pressed="false"><span class="cl-long">Printing</span><span class="cl-short">Printing</span><span class="n">2</span></button><button class="chip" data-sec="deadlines-and-grades" aria-pressed="false"><span class="cl-long">Deadlines and grades</span><span class="cl-short">Deadlines and grades</span><span class="n">5</span></button></nav>
     <div class="count" id="count"></div>
   </div>
 
