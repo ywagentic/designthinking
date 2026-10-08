@@ -10,5 +10,4 @@ Served via jsDelivr:
 https://cdn.jsdelivr.net/gh/<user>/<repo>@main/images-for-hosting/<folder>/<file>
 ```
 
-`MANIFEST.md` lists every file with its source and credit status. Several figures are third-party
-material reproduced for teaching; see the manifest before reusing anything here.
+Several figures are third-party material reproduced for teaching. Please do not reuse them without permission.

@@ -2,3 +2,6 @@
 Icon?
 ._*
 Thumbs.db
+
+# 内部清单不进公开仓库
+images-for-hosting/MANIFEST.md
